@@ -10,11 +10,7 @@ Portal turístico interativo desenvolvido para a agência fictícia **Brasil Enc
 - Lucas Caetano - RA: 202610226
 - Vitor Faggiani D'Agostini - RA: 202610049
 
-## Tecnologias Utilizadas
 
-- HTML5 semântico
-- CSS3 externo (Flexbox, Media Queries)
-- YouTube iframes para vídeos incorporados
 
 ## Estrutura do Projeto
 
