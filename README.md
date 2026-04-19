@@ -37,4 +37,4 @@ projeto-turismo/
 
 ---
 
-Projeto Avaliativo – Desenvolvimento Web (HTML + CSS) – 2026
+Projeto Avaliativo – Desenvolvimento Web (HTML + CSS) – CIÊNCIA DA COMPUTAÇÃO - 1º SEMESTRE - 2026
