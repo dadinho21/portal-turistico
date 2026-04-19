@@ -1,0 +1,671 @@
+/* =============================================
+   Brasil Encantado - Portal Turístico
+   style.css
+   ============================================= */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #2c2c2c;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* --- HEADER --- */
+header {
+  background: linear-gradient(135deg, #002776 0%, #009c3b 100%);
+  color: #ffffff;
+  padding: 0 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-icone {
+  font-size: 2rem;
+}
+
+.logo h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #ffdf00;
+  letter-spacing: 1px;
+  text-
+}
+
+/* --- NAVEGAÇÃO --- */
+nav {
+}
+
+nav ul {
+  display: flex;
+  gap: 0.5rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffdf00;
+}
+
+nav ul li a.ativo {
+  background-color: #ffdf00;
+  color: #002776;
+  font-weight: 700;
+}
+
+/* --- HERO BANNER --- */
+.hero {
+  color: #ffffff;
+  text-align: center;
+  padding: 6rem 2rem;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url('../img/hero_index.jpg') center/cover no-repeat;
+}
+
+.hero-destinos {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('../img/hero_dest.jpg') center/cover no-repeat;
+}
+
+.hero-gastro {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('../img/hero_gastro.jpg') center/cover no-repeat;
+}
+
+.hero-contato {
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url('../img/hero_contato.jpg') center/cover no-repeat;
+}
+
+.hero-conteudo {
+  max-width: 720px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e8e8e8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primario {
+  background-color: #ffdf00;
+  color: #002776;
+}
+
+.btn-primario:hover {
+  box-shadow: 0 8px 20px rgba(255, 223, 0, 0.5);
+}
+
+.btn-secundario {
+  background-color: #009c3b;
+  color: #ffffff;
+}
+
+.btn-secundario:hover {
+  box-shadow: 0 8px 20px rgba(0, 156, 59, 0.5);
+}
+
+/* --- LAYOUT PRINCIPAL --- */
+.pagina-container {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* --- ASIDE --- */
+aside {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.aside-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.aside-card h3 {
+  font-size: 1.1rem;
+  color: #002776;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #ffdf00;
+}
+
+.aside-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aside-card ul li {
+  padding: 0.4rem 0;
+  color: #666;
+  font-size: 0.92rem;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.aside-card ul li:last-child {
+  border-bottom: none;
+}
+
+.aside-card p {
+  color: #666;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* --- SEÇÕES --- */
+section {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #002776;
+  margin-bottom: 0.5rem;
+}
+
+.secao-subtitulo {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 0.98rem;
+}
+
+.divisor {
+  width: 60px;
+  height: 4px;
+  background: #ffdf00;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+/* --- GRID DE CARDS --- */
+.grid-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #f4f6f9;
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1 1 260px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover img {
+}
+
+.card-corpo {
+  padding: 1.2rem;
+}
+
+.card-corpo h3 {
+  font-size: 1.1rem;
+  color: #002776;
+  margin-bottom: 0.4rem;
+}
+
+.card-corpo p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #009c3b;
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+/* --- VÍDEOS --- */
+.video-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.video-wrapper {
+  flex: 1 1 300px;
+}
+
+.video-wrapper h3 {
+  font-size: 1rem;
+  color: #002776;
+  margin-bottom: 0.6rem;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- DESTINO DESTAQUE --- */
+.destino-destaque {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.destino-destaque img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.destino-destaque img:hover {
+}
+
+.destino-info h3 {
+  font-size: 1.4rem;
+  color: #002776;
+  margin-bottom: 0.5rem;
+}
+
+.destino-info p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.destino-info .tag {
+  background: #002776;
+}
+
+/* --- GASTRONOMIA --- */
+.prato-card {
+  background: #f4f6f9;
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1 1 220px;
+}
+
+.prato-card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.prato-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.prato-card-corpo {
+  padding: 1rem;
+}
+
+.prato-card-corpo h3 {
+  font-size: 1rem;
+  color: #009c3b;
+  margin-bottom: 0.3rem;
+}
+
+.prato-card-corpo p {
+  font-size: 0.87rem;
+  color: #666;
+}
+
+.regiao-badge {
+  display: inline-block;
+  background: #ffdf00;
+  color: #002776;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.6rem;
+  border-radius: 50px;
+  margin-bottom: 0.4rem;
+}
+
+/* --- CONTATO FORM --- */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-grupo label {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: #002776;
+}
+
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+  padding: 0.7rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+  outline: none;
+  border-color: #009c3b;
+}
+
+.form-grupo textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-linha {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-linha .form-grupo {
+  flex: 1;
+}
+
+/* --- INFO CONTATO --- */
+.info-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.info-item {
+  flex: 1 1 180px;
+  background: #f4f6f9;
+  padding: 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+  border-top: 4px solid #009c3b;
+}
+
+.info-item .icone {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-item h4 {
+  color: #002776;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.info-item p {
+  color: #666;
+  font-size: 0.88rem;
+}
+
+/* --- STATS BANNER --- */
+.stats-banner {
+  background: linear-gradient(135deg, #002776, #009c3b);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item .numero {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffdf00;
+  display: block;
+}
+
+.stat-item .label {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+}
+
+/* --- FOOTER --- */
+footer {
+  background: linear-gradient(135deg, #002776, #001a4d);
+  color: #ffffff;
+  padding: 2.5rem 2rem 1.5rem;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+}
+
+.footer-col h4 {
+  font-size: 1rem;
+  color: #ffdf00;
+  margin-bottom: 1rem;
+  text-
+  letter-spacing: 1px;
+}
+
+.footer-col p,
+.footer-col li {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.8;
+}
+
+.footer-col ul li a:hover {
+  color: #ffdf00;
+}
+
+.footer-linha {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer-linha p {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 900px) {
+  .pagina-container {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .destino-destaque img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-inner {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+    gap: 0.8rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  .hero {
+    padding: 4rem 1.5rem;
+    min-height: 360px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .stats-banner {
+    gap: 1.5rem;
+  }
+
+  .form-linha {
+    flex-direction: column;
+  }
+
+  .video-wrapper iframe {
+    height: 200px;
+  }
+
+  .footer-linha {
+    flex-direction: column;
+    text-align: center;
+  }
+}

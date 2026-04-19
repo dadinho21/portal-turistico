@@ -1,0 +1,21 @@
+.container { /*estilo para o container que envolve as caixas*/
+    display: flex; /*define padrão em linha*/
+   /* flex-direction: row; alinha as caixas em uma linha*/
+    /* flex-direction: column; alinha as caixas em uma coluna*/
+    justify-content: space-between; /*alinha as caixas horizontalmente com espaço entre elas*/
+    align-items:center; /*alinha as caixas verticalmente ao centro*/;
+    height: 200px; /*altura do container*/
+    background-color: lightgray;
+    flex-wrap: wrap; /*permite que as caixas quebrem para a próxima linha se não couberem em uma linha*/
+   /* justify-content: center; alinha as caixas horizontalmente ao centro*/
+   /* flex-direction: column; alinha as caixas em uma coluna*/
+}
+
+
+
+.box {
+    width: 100px; /*largura da caixa*/
+    height: 100px; /*altura da caixa*/
+    background-color: lightblue; /*cor de fundo da caixa*/
+    border: 1px solid; /*borda da caixa*/
+}

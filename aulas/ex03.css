@@ -1,0 +1,83 @@
+body {
+    margin: 0; /*Remove a margem padrão do navegador para evitar espaços indesejados ao redor da página*/
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh; /*Garante que o body tenha pelo menos a altura da tela, permitindo que o footer fique no final da página mesmo com pouco conteúdo*/
+    display: flex; /*Permite que o footer fique no final da página, mesmo que o conteúdo seja menor que a altura da tela*/
+    flex-direction: column; /*Permite que o footer fique no final da página, mesmo que o conteúdo seja menor que a altura da tela*/
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: aqua;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px; 
+    background-color: #e2e2e2;
+    flex: 1; /*Falar como elemento cresce ou estica dentro do conteudo*/
+}
+
+.cards {
+    display: flex;
+    gap: 20px; /*Espaçamento entre os cards*/
+    flex-wrap: wrap; /*Permite que os cards quebrem para a próxima linha se não houver espaço suficiente*/
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 150px; /*Falar como elemento cresce ou estica dentro do conteudo*/
+}
+
+.destaque {
+    flex: 2 1 300px; /*Falar como elemento cresce ou estica dentro do conteudo, dando mais espaço para o destaque*/
+}
+
+footer {
+    background-color: #333;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /*Garante que o footer fique no final da página, mesmo que o conteúdo seja menor que a altura da tela*/
+}

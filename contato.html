@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Brasil Encantado</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icone">🌿</span>
+        <h1>Brasil Encantado
+          <span>Portal Turístico</span>
+        </h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="gastronomia.html">Gastronomia</a></li>
+          <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero hero-contato">
+    <div class="hero-conteudo">
+      <h2>Fale Conosco</h2>
+      <p>Planeje sua próxima aventura com a Brasil Encantado. Estamos prontos para te ajudar!</p>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO -->
+  <div class="pagina-container">
+
+    <main>
+
+      <!-- INFORMAÇÕES DE CONTATO -->
+      <section>
+        <h2>Nossas Informações</h2>
+        <div class="divisor"></div>
+        <p class="secao-subtitulo">Entre em contato por qualquer um dos canais abaixo</p>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="icone">📧</div>
+            <h4>E-mail</h4>
+            <p>contato@brasilencantado.com.br</p>
+          </div>
+          <div class="info-item">
+            <div class="icone">📞</div>
+            <h4>Telefone</h4>
+            <p>(19) 9 99912-0119</p>
+          </div>
+          <div class="info-item">
+            <div class="icone">📍</div>
+            <h4>Endereço</h4>
+            <p>Av. Paulista, 1000 – São Paulo, SP</p>
+          </div>
+          <div class="info-item">
+            <div class="icone">🕐</div>
+            <h4>Horário</h4>
+            <p>Seg–Sex: 8h às 18h<br>Sáb: 9h às 13h</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULÁRIO -->
+      <section>
+        <h2>Envie uma Mensagem</h2>
+        <div class="divisor"></div>
+        <p class="secao-subtitulo">Preencha o formulário e retornaremos em até 24 horas</p>
+
+        <form class="form-contato" action="#" method="post">
+
+          <div class="form-linha">
+            <div class="form-grupo">
+              <label for="nome">Nome Completo *</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-grupo">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-grupo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(11) 9 0000-0000">
+            </div>
+            <div class="form-grupo">
+              <label for="assunto">Assunto *</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione um assunto</option>
+                <option value="roteiro">Montar roteiro de viagem</option>
+                <option value="pacote">Informações sobre pacotes</option>
+                <option value="hospedagem">Hospedagem</option>
+                <option value="grupo">Viagem em grupo</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="destino">Destino de Interesse</label>
+            <select id="destino" name="destino">
+              <option value="">Escolha um destino (opcional)</option>
+              <option value="norte">Região Norte – Amazônia</option>
+              <option value="nordeste">Região Nordeste – Praias</option>
+              <option value="centro-oeste">Centro-Oeste – Pantanal</option>
+              <option value="sudeste">Sudeste – Rio / SP</option>
+              <option value="sul">Sul – Serras e Cidades</option>
+              <option value="varios">Vários destinos</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte-nos sobre sua viagem dos sonhos..."
+              required></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-secundario">Enviar Mensagem</button>
+          </div>
+
+        </form>
+      </section>
+
+      <!-- REDES SOCIAIS -->
+      <section>
+        <h2>Siga-nos nas Redes</h2>
+        <div class="divisor"></div>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="icone">📸</div>
+            <h4>Instagram</h4>
+            <p>@brasilencantado</p>
+          </div>
+          <div class="info-item">
+            <div class="icone">▶️</div>
+            <h4>YouTube</h4>
+            <p>Brasil Encantado TV</p>
+          </div>
+          <div class="info-item">
+            <div class="icone">👍</div>
+            <h4>Facebook</h4>
+            <p>/brasilencantadotur</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ASIDE -->
+    <aside>
+
+      <div class="aside-card">
+        <h3>💡 Por que nos escolher?</h3>
+        <ul>
+          <li>✅ Roteiros 100% personalizados</li>
+          <li>✅ Guias locais especializados</li>
+          <li>✅ Preços competitivos</li>
+          <li>✅ Suporte 24h durante a viagem</li>
+          <li>✅ Parceiros certificados pelo Ministério do Turismo</li>
+        </ul>
+      </div>
+
+      <div class="aside-card">
+        <h3>📦 Nossos Pacotes</h3>
+        <ul>
+          <li>🌊 <strong>Praia Nordestina:</strong> 7 dias, tudo incluso</li>
+          <li>🌿 <strong>Amazônia Selvagem:</strong> 5 dias, ecoturismo</li>
+          <li>🦁 <strong>Pantanal Safari:</strong> 4 dias, fauna e flora</li>
+          <li>🏙️ <strong>Rio Maravilhoso:</strong> 5 dias, city tour</li>
+          <li>🍷 <strong>Sul Gaúcho:</strong> 6 dias, cultura e gastronomia</li>
+        </ul>
+      </div>
+
+      <div class="aside-card">
+        <h3>⭐ Depoimentos</h3>
+        <p>"A melhor experiência da minha vida! Roteiro perfeito pela Amazônia." <br><strong>— Ana Paula, SP</strong>
+        </p>
+        <br>
+        <p>"Atendimento impecável e preços justos. Voltarei com certeza!" <br><strong>— João Vitor, RJ</strong></p>
+      </div>
+
+      <div class="aside-card">
+        <h3>📋 Informações Extras</h3>
+        <p>Aceitamos pagamento via <strong>Pix, cartão de crédito</strong> (até 12x) e <strong>transferência
+            bancária</strong>. Parcelamos seu sonho!</p>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Brasil Encantado</h4>
+          <p>Portal Turístico Interativo dedicado a mostrar as maravilhas do Brasil para o mundo.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Páginas</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Integrantes</h4>
+          <ul>
+            <li>Gabriel Vergílio Passarini - RA: 202610123 </li>
+            <li>Lucas Caetano - RA: </li>
+            <li>Vitor Faggiani D'Agostini - RA: 202610049</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato Fictício</h4>
+          <p>📧 contato@brasilencantado.com.br</p>
+          <p>📞 (19) 9 99912-0119</p>
+          <p>📍 São Paulo, SP – Brasil</p>
+        </div>
+      </div>
+      <div class="footer-linha">
+        <p>© 2026 Brasil Encantado – Portal Turístico "Descubra o Brasil"</p>
+        <p>Projeto Avaliativo – Desenvolvimento Web (HTML + CSS)</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
