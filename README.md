@@ -33,7 +33,7 @@ projeto-turismo/
 
 ## Link do Site Publicado
 
-> _Adicionar o link do GitHub Pages após a publicação_
+> [https://dadinho21.github.io/portal-turistico](https://dadinho21.github.io/portal-turistico/)
 
 ---
 
