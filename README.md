@@ -6,9 +6,9 @@ Portal turístico interativo desenvolvido para a agência fictícia **Brasil Enc
 
 ## Integrantes do Grupo
 
-- Gabriel
-- Integrante 2
-- Integrante 3
+- Gabriel Vergílio Passarini - RA: 202610123
+- Lucas Caetano - RA: 202610226
+- Vitor Faggiani D'Agostini - RA: 202610049
 
 ## Tecnologias Utilizadas
 
