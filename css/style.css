@@ -80,12 +80,10 @@ header {
   font-weight: 400;
   color: #ffdf00;
   letter-spacing: 1px;
-  text-
+  text-transform: uppercase;
 }
 
 /* --- NAVEGAÇÃO --- */
-nav {
-}
 
 nav ul {
   display: flex;
@@ -301,8 +299,6 @@ section h2 {
   object-fit: cover;
 }
 
-.card:hover img {
-}
 
 .card-corpo {
   padding: 1.2rem;
@@ -373,8 +369,6 @@ section h2 {
   flex-shrink: 0;
 }
 
-.destino-destaque img:hover {
-}
 
 .destino-info h3 {
   font-size: 1.4rem;
@@ -575,7 +569,7 @@ footer {
   font-size: 1rem;
   color: #ffdf00;
   margin-bottom: 1rem;
-  text-
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
